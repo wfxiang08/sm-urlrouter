@@ -1,0 +1,17 @@
+GET---->/api/v17/android/sm/en-US/phone/xhdpi/ktv/user/check_follow/5348024334206899---->ktv/user/check-follow
+POST---->/api/v17/android/sm/hi-IN/phone/xhdpi/views---->recording/views
+GET---->/api/v17/android/sm/in-ID/phone/xxhdpi/tagging/user_list?recording_id=547873772---->friend/tagging-user-list
+GET---->/api/v17/android/sm/en-US/phone/xxhdpi/recordings/1407374883753814/photos---->photo/recording-photos
+GET---->/api/v17/android/sm/in-ID/phone/xxhdpi/recordings/547873772---->recording/view
+GET---->/api/v17/android/sm/in-ID/phone/xxhdpi/recordings/547873772---->recording/view
+GET---->/api/v17/android/sm/en-US/phone/xhdpi/library/recommend/songs?page=1&is_new_user=false---->library/recommend-songs
+GET---->/api/v17/android/sm/en-US/phone/xhdpi/tagging/user_list?recording_id=6755399283431868---->friend/tagging-user-list
+GET---->/api/v17/android/sm/en-US/phone/xhdpi/app/contents---->app/contents
+GET---->/api/v17/android/sm/en-US/phone/hdpi/users/6473924130377090/recordings---->user/recordings
+GET---->/api/v17/android/tvp/pt-BR/phone/xxhdpi/ktv/user/check_follow/6755399375129141---->ktv/user/check-follow
+GET---->/api/v17/android/tvp/pt-BR/phone/xxhdpi/users/6755399375129141/photos---->photo/user-photos
+GET---->/api/v17/android/sm/en-US/phone/xhdpi/recordings/547874228---->recording/view
+GET---->/api/v17/android/sm/en-US/phone/xhdpi/songs/611752105016209069---->song/view
+GET---->/api/v17/android/sm/en-US/phone/hdpi/recordings/6192449380665485/photos---->photo/recording-photos
+GET---->/api/v17/android/sm/en-GB/phone/xxhdpi/tagging/user_list?recording_id=5066549539047018---->friend/tagging-user-list
+POST---->/api/v17/android/sm/en-US/phone/hdpi/app/user-info---->user/multi-get-user-for-app

@@ -1,0 +1,362 @@
+api/v17/<platform>/<client>/<language>/<deviceType>/<deviceDensity>/config###app/config
+GET api/v17/<platform>/<client>/<language>/<deviceType>/<deviceDensity>/deep-link###app/deep-link
+GET api/v17/<platform>/<client>/<language>/<deviceType>/<deviceDensity>/app/contents###app/contents
+api/v17/<platform>/<client>/<language>/<deviceType>/<deviceDensity>/android/latency###app/android-latency
+api/v17/<platform>/<client>/<language>/<deviceType>/<deviceDensity>/ab-config###app/ab-config
+api/v17/<platform>/<client>/<language>/<deviceType>/<deviceDensity>/feeds/home/chart###feed/chart
+api/v17/<platform>/<client>/<language>/<deviceType>/<deviceDensity>/chart/<chart_collection_id>/users###chart/users
+api/v17/<platform>/<client>/<language>/<deviceType>/<deviceDensity>/chart/<chart_collection_id>/recordings###chart/recordings
+api/v17/<platform>/<client>/<language>/<deviceType>/<deviceDensity>/feeds/profile###feed/me
+api/v17/<platform>/<client>/<language>/<deviceType>/<deviceDensity>/feeds/profile/<user_id:\d+>###feed/profile
+api/v17/<platform>/<client>/<language>/<deviceType>/<deviceDensity>/users/<user_id:\d+>/songs###user/songs
+PUT api/v17/<platform>/<client>/<language>/<deviceType>/<deviceDensity>/users/<user_id:\d+>/images###user/image
+POST api/v17/<platform>/<client>/<language>/<deviceType>/<deviceDensity>/users/<user_id:\d+>/songs/<song_id:\d+>###user/song-redeemed
+GET api/v17/<platform>/<client>/<language>/<deviceType>/<deviceDensity>/users/<user_id:\d+>/image-url###user/image-url
+POST api/v17/<platform>/<client>/<language>/<deviceType>/<deviceDensity>/users/<user_id:\d+>/upload-complete###user/complete-uploading
+api/v17/<platform>/<client>/<language>/<deviceType>/<deviceDensity>/users/<user_id:\d+>/recordings###user/recordings
+api/v17/<platform>/<client>/<language>/<deviceType>/<deviceDensity>/users/<user_id:\d+>/shares###user/shares
+api/v17/<platform>/<client>/<language>/<deviceType>/<deviceDensity>/users/<user_id:\d+>/followers###user/followers
+api/v17/<platform>/<client>/<language>/<deviceType>/<deviceDensity>/users/<user_id:\d+>/followees###user/followees
+GET api/v17/<platform>/<client>/<language>/<deviceType>/<deviceDensity>/users/<user_id:\d+>###user/view
+POST api/v17/<platform>/<client>/<language>/<deviceType>/<deviceDensity>/users/<user_id:\d+>/images###user/image
+HEAD api/v17/<platform>/<client>/<language>/<deviceType>/<deviceDensity>/users/<stage_name:.*>###user/stagename
+HEAD api/v17/<platform>/<client>/<language>/<deviceType>/<deviceDensity>/users/stagename/<stage_name:.*>/###user/stagename
+GET api/v17/<platform>/<client>/<language>/<deviceType>/<deviceDensity>/checkEmail###user/email
+GET api/v17/<platform>/<client>/<language>/<deviceType>/<deviceDensity>/users/<user_id:\d+>/im-token###chat/token
+api/v17/<platform>/<client>/<language>/<deviceType>/<deviceDensity>/feeds/sing/library###feed/library
+api/v17/<platform>/<client>/<language>/<deviceType>/<deviceDensity>/library/main###v18/library/library
+api/v17/<platform>/<client>/<language>/<deviceType>/<deviceDensity>/library/recommend/songs###library/recommend-songs
+api/v17/<platform>/<client>/<language>/<deviceType>/<deviceDensity>/library/recommend/collab###v18/library/recommend-collabs
+api/v17/<platform>/<client>/<language>/<deviceType>/<deviceDensity>/songs/vip/hot###song/vip-hot
+api/v17/<platform>/<client>/<language>/<deviceType>/<deviceDensity>/songs/vip/new###song/vip-new
+api/v17/<platform>/<client>/<language>/<deviceType>/<deviceDensity>/songs/free/hot###song/free-hot
+api/v17/<platform>/<client>/<language>/<deviceType>/<deviceDensity>/songs/free/new###song/free-new
+api/v17/<platform>/<client>/<language>/<deviceType>/<deviceDensity>/songs/new###song/new
+api/v17/<platform>/<client>/<language>/<deviceType>/<deviceDensity>/songs/most-sung###song/most-sung
+api/v17/<platform>/<client>/<language>/<deviceType>/<deviceDensity>/songs/<song_id>###song/view
+api/v17/<platform>/<client>/<language>/<deviceType>/<deviceDensity>/playlists###playlist/index
+api/v17/<platform>/<client>/<language>/<deviceType>/<deviceDensity>/playlists/<id>/songs###playlist/songs
+api/v17/<platform>/<client>/<language>/<deviceType>/<deviceDensity>/songs/<song_id>/chart/<label:(hot|new|collab)>###song/chart
+api/v17/<platform>/<client>/<language>/<deviceType>/<deviceDensity>/songs/<song_id>/chart-new/<label:(hot|new|collab)>###song/chart-new
+api/v17/<platform>/<client>/<language>/<deviceType>/<deviceDensity>/songs/<song_id>/addition###song/addition
+api/v17/<platform>/<client>/<language>/<deviceType>/<deviceDensity>/songs/<song_id>/hashtag###song/hashtag
+api/v17/<platform>/<client>/<language>/<deviceType>/<deviceDensity>/songs/<song_id>/feedback-likes###song/feedback-likes
+api/v17/<platform>/<client>/<language>/<deviceType>/<deviceDensity>/songs/<song_id>/guide###song/guide
+POST api/v17/<platform>/<client>/<language>/<deviceType>/<deviceDensity>/songs/<song_id>/apply-guide/<recording_id>###song/apply-guide
+api/v17/<platform>/<client>/<language>/<deviceType>/<deviceDensity>/search/all/<keyword:.*>###search/all
+api/v17/<platform>/<client>/<language>/<deviceType>/<deviceDensity>/search/instant/<keyword:.*>###search/instant
+api/v17/<platform>/<client>/<language>/<deviceType>/<deviceDensity>/search/hashtag/<keyword:.*>###search/hashtag
+api/v17/<platform>/<client>/<language>/<deviceType>/<deviceDensity>/search/songs/<keyword:.*>###search/songs
+api/v17/<platform>/<client>/<language>/<deviceType>/<deviceDensity>/search/artists/<keyword:.*>###search/artists
+api/v17/<platform>/<client>/<language>/<deviceType>/<deviceDensity>/search/people/<keyword:.*>###search/people
+api/v17/<platform>/<client>/<language>/<deviceType>/<deviceDensity>/search/tags/<keyword:.*>###search/tags
+api/v17/<platform>/<client>/<language>/<deviceType>/<deviceDensity>/search/keywords###search/keywords
+POST api/v17/<platform>/<client>/<language>/<deviceType>/<deviceDensity>/users/<user_id:\d+>/wishes###user/wishes
+api/v17/<platform>/<client>/<language>/<deviceType>/<deviceDensity>/feeds/home/follow###feed/home-follow
+POST,DELETE api/v17/<platform>/<client>/<language>/<deviceType>/<deviceDensity>/users/<user_id:\d+>/followees/<followee_id:\d+>###follow/follow
+POST api/v17/<platform>/<client>/<language>/<deviceType>/<deviceDensity>/users/<user_id:\d+>/followees/<label:(facebook|contacts|user_ids)>###follow/multi-follow
+api/v17/<platform>/<client>/<language>/<deviceType>/<deviceDensity>/follow/recordings###follow/recordings
+api/v17/<platform>/<client>/<language>/<deviceType>/<deviceDensity>/follow/user-recordings###follow/user-recordings
+api/v17/<platform>/<client>/<language>/<deviceType>/<deviceDensity>/users/<user_id:\d+>/friends###follow/friends
+GET api/v17/<platform>/<client>/<language>/<deviceType>/<deviceDensity>/promotions/<promotion_id>/songs###promotion/promotion/songs
+GET api/v17/<platform>/<client>/<language>/<deviceType>/<deviceDensity>/promotions/<promotion_id>###promotion/promotion/view
+GET api/v17/<platform>/<client>/<language>/<deviceType>/<deviceDensity>/promotions/<promotion_id>/<label:(popular|recent|youtube)>###promotion/promotion/recordings
+POST,DELETE api/v17/<platform>/<client>/<language>/<deviceType>/<deviceDensity>/likes/<recording_id>###recording/like
+GET api/v17/<platform>/<client>/<language>/<deviceType>/<deviceDensity>/promotions/<promotion_id>/rank###promotion/promotion/promotion-recordings-rank
+GET api/v17/<platform>/<client>/<language>/<deviceType>/<deviceDensity>/promotions/<promotion_id>/share###contest/share
+GET api/v17/<platform>/<client>/<language>/<deviceType>/<deviceDensity>/promotions/<promotion_id>/daily-rank###promotion/promotion/daily-rank
+api/v17/<platform>/<client>/<language>/<deviceType>/<deviceDensity>/feeds/friends###feed/friends
+api/v17/<platform>/<client>/<language>/<deviceType>/<deviceDensity>/users/<user_id:\d+>/friends/<label:(facebook|contacts)>###friend/list
+api/v17/<platform>/<client>/<language>/<deviceType>/<deviceDensity>/friends/recommend###friend/recommend
+api/v17/<platform>/<client>/<language>/<deviceType>/<deviceDensity>/friends/all###friend/all
+api/v17/<platform>/<client>/<language>/<deviceType>/<deviceDensity>/friends/list###friend/page
+api/v17/<platform>/<client>/<language>/<deviceType>/<deviceDensity>/tagging/user_list###friend/tagging-user-list
+api/v17/<platform>/<client>/<language>/<deviceType>/<deviceDensity>/feeds/sing/library/artist###feed/artist
+api/v17/<platform>/<client>/<language>/<deviceType>/<deviceDensity>/artists/<artist_id>/songs###artist/songs
+api/v17/<platform>/<client>/<language>/<deviceType>/<deviceDensity>/artists/<tag:(hot|individual|male|female|group|all)>###artist/tag
+api/v17/<platform>/<client>/<language>/<deviceType>/<deviceDensity>/tag/<tag_id>/songs###tag/songs
+api/v17/<platform>/<client>/<language>/<deviceType>/<deviceDensity>/feeds/home/feature###feed/home-feature
+api/v17/<platform>/<client>/<language>/<deviceType>/<deviceDensity>/feature/banners###feature/banners
+api/v17/<platform>/<client>/<language>/<deviceType>/<deviceDensity>/feature/recordings###feature/recordings
+GET api/v17/<platform>/<client>/<language>/<deviceType>/<deviceDensity>/recordings/<recording_id:\d+>###recording/view
+POST api/v17/<platform>/<client>/<language>/<deviceType>/<deviceDensity>/recordings###recording/create
+POST api/v17/<platform>/<client>/<language>/<deviceType>/<deviceDensity>/media###recording/get-upload-media-url
+POST api/v17/<platform>/<client>/<language>/<deviceType>/<deviceDensity>/recordings/success###recording/upload-success
+POST api/v17/<platform>/<client>/<language>/<deviceType>/<deviceDensity>/recording-thumbnail###recording/get-upload-thumbnail-url
+GET api/v17/<platform>/<client>/<language>/<deviceType>/<deviceDensity>/recordings/<recording_id:\d+>/masterhls###recording-content/masterhls
+GET api/v17/<platform>/<client>/<language>/<deviceType>/<deviceDensity>/recordings/<recording_id:\d+>/audiohls###recording-content/audiohls
+GET api/v17/<platform>/<client>/<language>/<deviceType>/<deviceDensity>/recordings/<recording_id:\d+>/audiohls/<format:\d+>###recording-content/subhls
+GET api/v17/<platform>/<client>/<language>/<deviceType>/<deviceDensity>/recordings/<recording_id:\d+>/masterhls/<format:\d+>###recording-content/subhls
+PATCH api/v17/<platform>/<client>/<language>/<deviceType>/<deviceDensity>/recordings/<recording_id:\d+>###recording/patch
+DELETE api/v17/<platform>/<client>/<language>/<deviceType>/<deviceDensity>/recordings/<recording_id:\d+>###recording/delete
+GET api/v17/<platform>/<client>/<language>/<deviceType>/<deviceDensity>/recordings/<recording_id:\d+>/availability###recording/availability
+POST api/v17/<platform>/<client>/<language>/<deviceType>/<deviceDensity>/multipart-uploading###recording/complete
+GET api/v17/<platform>/<client>/<language>/<deviceType>/<deviceDensity>/recordings/<recording_id:\d+>/share###recording/share
+POST api/v17/<platform>/<client>/<language>/<deviceType>/<deviceDensity>/recordings/<recording_id:\d+>/pin###recording/pin
+DELETE api/v17/<platform>/<client>/<language>/<deviceType>/<deviceDensity>/recordings/<recording_id:\d+>/unpin###recording/unpin
+POST api/v17/<platform>/<client>/<language>/<deviceType>/<deviceDensity>/recordings/<recording_id:\d+>/cover###recording/get-cover-image-url
+POST api/v17/<platform>/<client>/<language>/<deviceType>/<deviceDensity>/recordings/<recording_id:\d+>/description###recording/update-description
+POST api/v17/<platform>/<client>/<language>/<deviceType>/<deviceDensity>/v2/media###recording/get-upload-media-url
+POST api/v17/<platform>/<client>/<language>/<deviceType>/<deviceDensity>/external-share/###share/external
+api/v17/<platform>/<client>/<language>/<deviceType>/<deviceDensity>/contacts###contacts/upload
+api/v17/<platform>/<client>/<language>/<deviceType>/<deviceDensity>/share/<recording_id>###share/create
+api/v17/<platform>/<client>/<language>/<deviceType>/<deviceDensity>/share/<recording_id>/to-friends###share/to-friends
+api/v17/<platform>/<client>/<language>/<deviceType>/<deviceDensity>/share/<recording_id>/to-channel###share/to-channel
+api/v17/<platform>/<client>/<language>/<deviceType>/<deviceDensity>/report-reasons###report/reasons
+api/v17/<platform>/<client>/<language>/<deviceType>/<deviceDensity>/report/<reported_recording_id>###report/report
+GET api/v17/<platform>/<client>/<language>/<deviceType>/<deviceDensity>/record-questions###recording/get-questions
+POST api/v17/<platform>/<client>/<language>/<deviceType>/<deviceDensity>/record-question###recording/save-question
+GET api/v17/<platform>/<client>/<language>/<deviceType>/<deviceDensity>/recordings/<recording_id:\d+>/get-recording-shares###recording/recording-shares
+POST api/v17/<platform>/<client>/<language>/<deviceType>/<deviceDensity>/access_token###access-token/index
+OPTIONS api/v17/<platform>/<client>/<language>/<deviceType>/<deviceDensity>/access_token###access-token/options
+POST api/v17/<platform>/<client>/<language>/<deviceType>/<deviceDensity>/users###passport/create
+PUT,PATCH api/v17/<platform>/<client>/<language>/<deviceType>/<deviceDensity>/users/<user_id:\d+>###passport/users
+POST api/v17/<platform>/<client>/<language>/<deviceType>/<deviceDensity>/stagename/<user_id:\d+>###passport/stagename
+POST api/v17/<platform>/<client>/<language>/<deviceType>/<deviceDensity>/password/lost###passport/lost
+PUT api/v17/<platform>/<client>/<language>/<deviceType>/<deviceDensity>/users/password###passport/reset
+OPTIONS api/v17/<platform>/<client>/<language>/<deviceType>/<deviceDensity>/users/password###passport/options
+POST api/v17/<platform>/<client>/<language>/<deviceType>/<deviceDensity>/nux###access-token/nux
+POST api/v17/<platform>/<client>/<language>/<deviceType>/<deviceDensity>/login###access-token/login
+OPTIONS api/v17/<platform>/<client>/<language>/<deviceType>/<deviceDensity>/login###access-token/login-options
+POST api/v17/<platform>/<client>/<language>/<deviceType>/<deviceDensity>/register###access-token/register
+POST api/v17/<platform>/<client>/<language>/<deviceType>/<deviceDensity>/logout/<user_id:\d+>###access-token/logout
+POST api/v17/<platform>/<client>/<language>/<deviceType>/<deviceDensity>/quick-login###access-token/quick-login
+GET api/v17/<platform>/<client>/<language>/<deviceType>/<deviceDensity>/stagename/suggest###passport/stage-name-suggest
+POST api/v17/<platform>/<client>/<language>/<deviceType>/<deviceDensity>/views###recording/views
+api/v17/<platform>/<client>/<language>/<deviceType>/<deviceDensity>/store###product/index
+POST api/v17/<platform>/<client>/<language>/<deviceType>/<deviceDensity>/purchases###product/purchase
+api/v17/<platform>/<client>/<language>/<deviceType>/<deviceDensity>/users/<user_id:\d+>/pushme###user/push-me-view
+api/v17/<platform>/<client>/<language>/<deviceType>/<deviceDensity>/users/<user_id:\d+>/notifications###user/notifications
+PATCH api/v17/<platform>/<client>/<language>/<deviceType>/<deviceDensity>/users/<user_id:\d+>/notification/<notification_id:\d+>###notification/read
+api/v17/<platform>/<client>/<language>/<deviceType>/<deviceDensity>/users/<user_id:\d+>/notification/<notification_id:\d+>###notification/view
+POST api/v17/<platform>/<client>/<language>/<deviceType>/<deviceDensity>/users/<user_id:\d+>/device###device/device
+GET api/v17/<platform>/<client>/<language>/<deviceType>/<deviceDensity>/users/<user_id:\d+>/favorite###v18/favorite/favorite-list
+GET api/v17/<platform>/<client>/<language>/<deviceType>/<deviceDensity>/users/<user_id:\d+>/like###v18/user/like
+GET api/v17/<platform>/<client>/<language>/<deviceType>/<deviceDensity>/users/<user_id:\d+>/collab###v18/user/collab
+api/v17/<platform>/<client>/<language>/<deviceType>/<deviceDensity>/empty###empty/index
+POST api/v17/<platform>/<client>/<language>/<deviceType>/<deviceDensity>/recordings/<recording_id:\d+>/comment###comment/comment
+DELETE api/v17/<platform>/<client>/<language>/<deviceType>/<deviceDensity>/recordings/comment/<comment_id:\d+>###comment/comment-delete
+GET api/v17/<platform>/<client>/<language>/<deviceType>/<deviceDensity>/recordings/<recording_id:\d+>/comment_list###comment/comment-list
+POST api/v17/<platform>/<client>/<language>/<deviceType>/<deviceDensity>/recordings/<recording_id:\d+>/comment_enable###comment/enable
+POST api/v17/<platform>/<client>/<language>/<deviceType>/<deviceDensity>/recordings/<recording_id:\d+>/comment_disable###comment/disable
+POST api/v17/<platform>/<client>/<language>/<deviceType>/<deviceDensity>/recordings/comment/<comment_id:\d+>/like###comment/like
+POST api/v17/<platform>/<client>/<language>/<deviceType>/<deviceDensity>/recordings/comment/<comment_id:\d+>/report###comment/report
+GET api/v17/<platform>/<client>/<language>/<deviceType>/<deviceDensity>/recordings/<recording_id:\d+>/related###recording/related
+POST api/v17/<platform>/<client>/<language>/<deviceType>/<deviceDensity>/photos###photo/create
+DELETE api/v17/<platform>/<client>/<language>/<deviceType>/<deviceDensity>/photos/<photo_ids:\S+>###photo/delete
+GET api/v17/<platform>/<client>/<language>/<deviceType>/<deviceDensity>/users/<user_id:\d+>/photos###photo/user-photos
+GET api/v17/<platform>/<client>/<language>/<deviceType>/<deviceDensity>/recordings/<recording_id:\w+>/photos###photo/recording-photos
+POST api/v17/<platform>/<client>/<language>/<deviceType>/<deviceDensity>/photos/success/<photo_ids:\S+>###photo/upload-success
+GET api/v17/<platform>/<client>/<language>/<deviceType>/<deviceDensity>/feeds/follow###v18/feed/follow
+GET api/v17/<platform>/<client>/<language>/<deviceType>/<deviceDensity>/feeds/featured###v18/feed/featured
+GET api/v17/<platform>/<client>/<language>/<deviceType>/<deviceDensity>/feeds/collab###v18/feed/collab
+GET api/v17/<platform>/<client>/<language>/<deviceType>/<deviceDensity>/feeds/video###v18/feed/video
+GET api/v17/<platform>/<client>/<language>/<deviceType>/<deviceDensity>/feeds/nearby###v18/feed/nearby
+POST api/v17/<platform>/<client>/<language>/<deviceType>/<deviceDensity>/feeds/dislike/<type:\w+>/<content_id:\d+>###v18/feed/dislike
+POST api/v17/<platform>/<client>/<language>/<deviceType>/<deviceDensity>/recordings/<recording_id:\d+>/favorite###recording/favorite
+DELETE api/v17/<platform>/<client>/<language>/<deviceType>/<deviceDensity>/recordings/<recording_id:\d+>/favorite###recording/favorite-delete
+GET api/v17/<platform>/<client>/<language>/<deviceType>/<deviceDensity>/discover###discover/index
+GET api/v17/<platform>/<client>/<language>/<deviceType>/<deviceDensity>/discover/<rank_id:\d+>###discover/view
+GET api/v17/<platform>/<client>/<language>/<deviceType>/<deviceDensity>/discover/user_rank/<rank_id:\d+>###discover/user-rank
+GET api/v17/<platform>/<client>/<language>/<deviceType>/<deviceDensity>/discover/user_rank/<rank_id:\d+>/<user_id:\d+>###discover/user-rank
+GET api/v17/<platform>/<client>/<language>/<deviceType>/<deviceDensity>/discover/countries###discover/get-country
+GET api/v17/<platform>/<client>/<language>/<deviceType>/<deviceDensity>/contest###contest/index
+POST api/v17/<platform>/<client>/<language>/<deviceType>/<deviceDensity>/contest/vote-alert###contest/vote-alert
+GET api/v17/<platform>/<client>/<language>/<deviceType>/<deviceDensity>/messages/me###message/me
+GET api/v17/<platform>/<client>/<language>/<deviceType>/<deviceDensity>/messages/following###message/following
+GET api/v17/<platform>/<client>/<language>/<deviceType>/<deviceDensity>/messages/collab###message/collab
+GET api/v17/<platform>/<client>/<language>/<deviceType>/<deviceDensity>/messages/system###message/system
+GET api/v17/<platform>/<client>/<language>/<deviceType>/<deviceDensity>/messages/gift###message/gift
+GET api/v17/<platform>/<client>/<language>/<deviceType>/<deviceDensity>/messages/newme###message/newme
+GET api/v17/<platform>/<client>/<language>/<deviceType>/<deviceDensity>/messages/new###message/new
+GET api/v17/<platform>/<client>/<language>/<deviceType>/<deviceDensity>/users/profile###v18/user/profile
+POST api/v17/<platform>/<client>/<language>/<deviceType>/<deviceDensity>/users/profile/edit###passport/edit
+GET api/v17/<platform>/<client>/<language>/<deviceType>/<deviceDensity>/users/profile/<user_id:\d+>###v18/user/profile
+GET api/v17/<platform>/<client>/<language>/<deviceType>/<deviceDensity>/diamond###v18/user/get-diamonds-info
+POST api/v17/<platform>/<client>/<language>/<deviceType>/<deviceDensity>/users/geolocation###user/geolocation
+POST api/v17/<platform>/<client>/<language>/<deviceType>/<deviceDensity>/users/<blocked_user_id:\d+>/block###v18/user/block
+GET api/v17/<platform>/<client>/<language>/<deviceType>/<deviceDensity>/users/blocks###v18/user/list-blocks
+POST api/v17/<platform>/<client>/<language>/<deviceType>/<deviceDensity>/users/<reported_user_id:\d+>/report###v18/user/report
+POST api/v17/<platform>/<client>/<language>/<deviceType>/<deviceDensity>/connect/<third_party:(twitter|instagram|google|facebook|phone)>###access-token/connect
+GET api/v17/<platform>/<client>/<language>/<deviceType>/<deviceDensity>/connect###access-token/connect-index
+POST api/v17/<platform>/<client>/<language>/<deviceType>/<deviceDensity>/disconnect/<third_party:(twitter|instagram|google|facebook|phone)>###access-token/disconnect
+GET api/v17/<platform>/<client>/<language>/<deviceType>/<deviceDensity>/friending/invitable###friending/invitable
+GET api/v17/<platform>/<client>/<language>/<deviceType>/<deviceDensity>/friending/<third_party:(twitter|instagram|google|facebook|phone)>###friending/list
+POST api/v17/<platform>/<client>/<language>/<deviceType>/<deviceDensity>/friending/follow_all/<third_party:(twitter|instagram|google|facebook|phone)>###friending/follow-all
+GET api/v17/<platform>/<client>/<language>/<deviceType>/<deviceDensity>/invite/<third_party:(google|contacts|twitter)>###invite/list
+POST api/v17/<platform>/<client>/<language>/<deviceType>/<deviceDensity>/send_invite/<third_party:(google|twitter)>###invite/send-invite
+GET api/v17/<platform>/<client>/<language>/<deviceType>/<deviceDensity>/hashtag/<hashtag:.*>/chart/<label:(hot|new)>###v18/hash-tag/chart
+GET api/v17/<platform>/<client>/<language>/<deviceType>/<deviceDensity>/recordings/<recording_id:\d+>/user-ranking-list###recording/get-user-ranking-list
+POST api/v17/<platform>/<client>/<language>/<deviceType>/<deviceDensity>/contest/canvass###contest/canvass
+POST api/v17/<platform>/<client>/<language>/<deviceType>/<deviceDensity>/follow-stat###recording/get-follow-stat
+POST api/v17/<platform>/<client>/<language>/<deviceType>/<deviceDensity>/user-info###user/multi-get-user
+POST api/v17/<platform>/<client>/<language>/<deviceType>/<deviceDensity>/silent###user/set-silent
+POST api/v17/<platform>/<client>/<language>/<deviceType>/<deviceDensity>/chat/report###chat/report-user
+POST api/v17/<platform>/<client>/<language>/<deviceType>/<deviceDensity>/chat/messages###chat/create-message
+GET api/v17/<platform>/<client>/<language>/<deviceType>/<deviceDensity>/chat/messages###chat/get-messages
+POST api/v17/<platform>/<client>/<language>/<deviceType>/<deviceDensity>/chat/approve###chat/approve-chat
+POST api/v17/<platform>/<client>/<language>/<deviceType>/<deviceDensity>/app/user-info###user/multi-get-user-for-app
+POST api/v17/<platform>/<client>/<language>/<deviceType>/<deviceDensity>/feedback###user/feedback
+GET api/v17/<platform>/<client>/<language>/<deviceType>/<deviceDensity>/banner/<channel:\w+>###app/banner
+GET api/v17/<platform>/<client>/<language>/<deviceType>/<deviceDensity>/tips###app/tips
+POST api/v17/<platform>/<client>/<language>/<deviceType>/<deviceDensity>/error/report###error-report/collect
+POST web/deep-link###deeplink/create-installation-source
+GET web/recordings/<recording_id:\d+>###web/recording/view
+POST,DELETE api/v17/<platform>/<client>/<language>/<deviceType>/<deviceDensity>/follow/<user_id>/feed/<recording_id>###internal/feed-flow/recording-feed
+POST api/v17/<platform>/<client>/<language>/<deviceType>/<deviceDensity>/internal/recordings/<recording_id:\d+>/start-transcode###internal/simple-transcode/start-transcode
+POST /internal/recordings/<recording_id:\d+>/end-cover-generate###internal/simple-transcode/end-cover-generate
+POST /internal/recordings/<recording_id:\d+>/end-fast-transcode###internal/simple-transcode/end-fast-transcode
+POST /internal/recordings/<recording_id:\d+>/end-simple-transcode###internal/simple-transcode/end-transcode
+POST /internal/recordings/<recording_id:\d+>/end-starclip-transcode###internal/simple-transcode/end-starclip-transcode
+POST /internal/recordings/<recording_id:\d+>/end-watermark-transcode###internal/simple-transcode/end-watermark-transcode
+POST /internal/recordings/<recording_id:\d+>/update-face-cover-image###internal/simple-transcode/update-face-cover-image
+POST /internal/recordings/<recording_id:\d+>/cover-upload###internal/simple-transcode/cover-upload
+POST /internal/user/<user_id:\d+>/follow/<target_user_id:\d+>###internal/user/follow
+GET internal/user###internal/user/get-user-by-token
+GET internal/user/<user_id:\d+>###internal/user/get-user
+POST internal/users###internal/user/multi-get-user
+GET internal/user/<user_id:\d+>/followers###internal/user/followers
+POST internal/user/check_follow_verified###internal/user/check-follow-verified
+POST internal/message/send-gift###internal/message/send-gift
+POST internal/message/free-gift###internal/message/free-gift
+GET internal/song/<song_id:\d+>###internal/song/get-song
+POST internal/songs###internal/song/multi-get-song
+GET internal/song/user/<user_id:\d+>###internal/song/user-control
+GET internal/contest/<promotion_id:\d+>/<recording_id:\d+>###internal/contest/promotion-recording
+POST api/v17/<platform>/<client>/<language>/<deviceType>/<deviceDensity>/ktv/rooms###ktv/room/create
+GET api/v17/<platform>/<client>/<language>/<deviceType>/<deviceDensity>/ktv/recommend/room/hot###ktv/recommend/hot
+GET api/v17/<platform>/<client>/<language>/<deviceType>/<deviceDensity>/ktv/gateway/<room_id:\d+>###ktv/room/gateway
+GET api/v17/<platform>/<client>/<language>/<deviceType>/<deviceDensity>/ktv/song/<song_id:\d+>###ktv/song/view
+POST api/v17/<platform>/<client>/<language>/<deviceType>/<deviceDensity>/ktv/song/multi###ktv/song/multi-get-song
+GET api/v17/<platform>/<client>/<language>/<deviceType>/<deviceDensity>/ktv/songs/main/<room_id:\d+>###ktv/library/main
+PATCH api/v17/<platform>/<client>/<language>/<deviceType>/<deviceDensity>/ktv/songs/delete###ktv/library/delete
+PATCH api/v17/<platform>/<client>/<language>/<deviceType>/<deviceDensity>/ktv/songs/add###ktv/library/add
+GET api/v17/<platform>/<client>/<language>/<deviceType>/<deviceDensity>/ktv/rooms/<room_id:\d+>###ktv/room/view
+GET api/v17/<platform>/<client>/<language>/<deviceType>/<deviceDensity>/ktv/user/myroom###ktv/room/myroom
+GET api/v17/<platform>/<client>/<language>/<deviceType>/<deviceDensity>/ktv/user/myroom/<label:(owner|admin|lead_singer)>###ktv/room/myroom-type
+PATCH api/v17/<platform>/<client>/<language>/<deviceType>/<deviceDensity>/ktv/rooms/<room_id:\d+>###ktv/room/update
+GET api/v17/<platform>/<client>/<language>/<deviceType>/<deviceDensity>/ktv/rooms/update-cover/<room_id:\d+>###ktv/room/update-cover
+PATCH api/v17/<platform>/<client>/<language>/<deviceType>/<deviceDensity>/ktv/rooms/admin/<room_id:\d+>###ktv/room/update-admin
+PATCH api/v17/<platform>/<client>/<language>/<deviceType>/<deviceDensity>/ktv/rooms/lead-singer/<room_id:\d+>###ktv/room/update-lead-singer
+GET api/v17/<platform>/<client>/<language>/<deviceType>/<deviceDensity>/ktv/logs/get-upload-log###ktv/user/upload-log
+GET api/v17/<platform>/<client>/<language>/<deviceType>/<deviceDensity>/ktv/rooms/share/<room_id:\d+>###ktv/room/share
+GET api/v17/<platform>/<client>/<language>/<deviceType>/<deviceDensity>/ktv/photos/get-upload-urls###ktv/photo/create
+DELETE api/v17/<platform>/<client>/<language>/<deviceType>/<deviceDensity>/ktv/photos/room/<room_id:\d+>/<photo_ids:\S+>###ktv/photo/delete
+GET api/v17/<platform>/<client>/<language>/<deviceType>/<deviceDensity>/ktv/room/<room_id:\d+>/photos###ktv/photo/room-photos
+POST api/v17/<platform>/<client>/<language>/<deviceType>/<deviceDensity>/ktv/photos/success/room###ktv/photo/upload-success
+GET api/v17/<platform>/<client>/<language>/<deviceType>/<deviceDensity>/ktv/search/room/<keyword:.*>###search/ktv-room
+GET api/v17/<platform>/<client>/<language>/<deviceType>/<deviceDensity>/ktv/search/instant/<keyword:.*>###search/ktv-instant
+api/v17/<platform>/<client>/<language>/<deviceType>/<deviceDensity>/ktv/search/all/<keyword:.*>###search/all
+api/v17/<platform>/<client>/<language>/<deviceType>/<deviceDensity>/ktv/search/song-instant/<keyword:.*>###search/instant
+api/v17/<platform>/<client>/<language>/<deviceType>/<deviceDensity>/ktv/search/songs/<keyword:.*>###search/songs
+api/v17/<platform>/<client>/<language>/<deviceType>/<deviceDensity>/ktv/search/artists/<keyword:.*>###search/artists
+api/v17/<platform>/<client>/<language>/<deviceType>/<deviceDensity>/ktv/search/keywords###search/keywords
+api/v17/<platform>/<client>/<language>/<deviceType>/<deviceDensity>/ktv/artists/<artist_id>/songs###artist/songs
+GET api/v17/<platform>/<client>/<language>/<deviceType>/<deviceDensity>/ktv/room/<room_id:\d+>/access###ktv/room/access
+GET api/v17/<platform>/<client>/<language>/<deviceType>/<deviceDensity>/ktv/user/<user_id:\d+>/access-history###ktv/room/access-history
+POST api/v17/<platform>/<client>/<language>/<deviceType>/<deviceDensity>/ktv/room/<room_id:\d+>/report###ktv/room/report
+GET api/v17/<platform>/<client>/<language>/<deviceType>/<deviceDensity>/ktv/user/check_follow/<target_user_id:\d+>###ktv/user/check-follow
+GET api/v17/<platform>/<client>/<language>/<deviceType>/<deviceDensity>/ktv/ranking/room/<room_id:\d+>###ktv/room/ranking
+GET api/v17/<platform>/<client>/<language>/<deviceType>/<deviceDensity>/money/client/routes###money/client/routes
+GET api/v17/<platform>/<client>/<language>/<deviceType>/<deviceDensity>/money/client/settings###money/client/settings
+GET api/v17/<platform>/<client>/<language>/<deviceType>/<deviceDensity>/money/statistics/assets###money/statistics/assets
+GET api/v17/<platform>/<client>/<language>/<deviceType>/<deviceDensity>/money/statistics/feeds###money/statistics/feeds
+GET api/v17/<platform>/<client>/<language>/<deviceType>/<deviceDensity>/money/gift/info###money/gift/get-gift-infos
+GET api/v17/<platform>/<client>/<language>/<deviceType>/<deviceDensity>/money/gift/remaining###money/gift/get-gift-remaining-count
+POST api/v17/<platform>/<client>/<language>/<deviceType>/<deviceDensity>/money/gift/send###money/gift/send
+GET api/v17/<platform>/<client>/<language>/<deviceType>/<deviceDensity>/money/gift/recording/history###money/gift/recording-history
+GET api/v17/<platform>/<client>/<language>/<deviceType>/<deviceDensity>/money/ranks###money/rank/view
+GET api/v17/<platform>/<client>/<language>/<deviceType>/<deviceDensity>/money/rank/recording###money/rank/recording
+GET api/v17/<platform>/<client>/<language>/<deviceType>/<deviceDensity>/money/rank/wealth###money/rank/wealth
+GET api/v17/<platform>/<client>/<language>/<deviceType>/<deviceDensity>/money/rank/starlight###money/rank/starlight
+GET api/v17/<platform>/<client>/<language>/<deviceType>/<deviceDensity>/money/rank/contribution/<user_id:\d+>###money/rank/send-contribution-rank
+GET api/v17/<platform>/<client>/<language>/<deviceType>/<deviceDensity>/money/charge/product###money/charge/product
+POST api/v17/<platform>/<client>/<language>/<deviceType>/<deviceDensity>/money/charge###money/charge/charge
+GET api/v17/<platform>/<client>/<language>/<deviceType>/<deviceDensity>/money/activity/rank/recording###money/activity/rank-recording
+GET api/v17/<platform>/<client>/<language>/<deviceType>/<deviceDensity>/money/activity/rank/recording/status###money/activity/rank-recording-status
+GET api/v17/<platform>/<client>/<language>/<deviceType>/<deviceDensity>/money/activity/rank/voter###money/activity/rank-voter
+GET /instrumental/terms###instrumental/terms
+GET /instrumental/upload###upload/index
+GET /instrumental/upload/help###upload/help
+GET /instrumental/get-stage-name###upload/get-stage-name
+GET /instrumental/upload-instrumental###instrumental/upload-instrumental
+POST /instrumental/save-instrumental###upload/save
+GET /instrumental/enter-title###upload/success
+POST /instrumental/save-title###instrumental/save-title
+GET /instrumental/enter-more###instrumental/enter-more
+POST /instrumental/save-more###instrumental/save-more
+GET /instrumental/enter-lyrics###instrumental/enter-lyrics
+POST /instrumental/save-lyrics###instrumental/save-lyrics
+GET /instrumental/enter-mail###instrumental/enter-mail
+POST /instrumental/save-mail###instrumental/save-mail
+GET /instrumental/upload-finish###instrumental/upload-finish
+playrecording/?###recording/view
+GET /promotion/<topic>###promotion/index
+GET /activity/songlist###promotion/song-list
+GET /stmaker_songlist/###promotion/song-list
+GET /activity/video###promotion/video-display
+GET /party-recruit/page###promotion/party-page
+GET /party-recruit/success-page###promotion/party-success-page
+POST /party-recruit###promotion/party
+GET /share###recording/detail
+GET /share/###recording/detail
+GET /share/detail###recording/detail
+GET /api/recordings/<recording_id:\d+>/detail###recording/api-detail
+GET /api/recordings/<recording_id:\d+>/gift###recording/api-gift
+GET /api/recordings/<recording_id:\d+>/related###recording/api-related
+GET /api/recordings/<recording_id:\d+>/comment###recording/api-comment
+GET /api/singer-verification/recordings###singer-verification/recordings
+POST /api/singer-verification/apply###singer-verification/apply
+/user/profile/<user_id:\d+>###user/profile
+GET /api/user/self###user/self
+GET /upload/index###upload/index
+POST /upload/save###upload/save
+GET /upload/success###upload/success
+GET /upload/profile###upload/profile
+GET /upload/logout###upload/logout
+POST /songbook/upload###songbook/upload
+POST /songbook/datas###songbook/datas
+POST /songbook/feedback###songbook/feedback
+GET /verified/home###verified/home
+GET /verified/singers###verified/singers
+GET /verified/solos###verified/solos
+GET /verified/collab_invites###verified/collab_invites
+GET /email/reject###email/unsubscribe
+GET /email/unsubscribe###email/unsubscribe
+GET /email/unsubscribe/confirm###email/unsubscribe-confirm
+GET /hashtag/<hashtag:.*>###hashtag/index
+GET /official/recordings###recording/get-recordings
+GET /official/banners###banner/get-banners
+GET /contest/index###contest/index
+GET /contest/detail###contest/index
+GET /contest/share###contest/index
+GET /contest/<promotion_id:\d+>###contest/detail
+GET /contest/recordings/<promotion_id:\d+>###contest/recordings-monthly
+POST /contest/change-recording###contest/change-recording
+/contest/rank/<label:\w+>###contest/rank
+GET /contest/share/<promotion_id:\d+>/<user_id:\d+>###contest/share
+GET /contest/withdraw/<topic:\w+>###income/index
+POST /i18n/translate###i18n/translate
+GET /feeds/feature###feed/feature
+GET /feeds/best-solo###feed/best-solo
+GET /feeds/best-collab###feed/best-collab
+GET /american-idol###promotion/american-idol
+POST /api/recordings/by-ids###contest/get-recording-container-by-ids
+GET /active###active/index
+GET /active/share###active/share
+GET /active/idol###active/idol
+GET /active/justin-bieber###active/justin-bieber
+GET /active/justin-bieber-shared###active/justin-bieber-share
+GET /live/share###live-share/share
+GET /strong/share###strong-share/index
+GET /strong/share/prizes###strong-share/prizes
+GET /api/strong/share/config###strong-share/config
+GET /api/strong/share/lottery###strong-share/lottery
+GET /api/strong/share/lottery/log###strong-share/log
+GET /ktv/index###ktv/index
+GET /ktv/share###ktv/share
+GET /app/guide-vocal###app/guide-vocal
+GET /activity/diwali/<promotion_id:\d+>###promotion/diwali
+GET /activity/<promotion_id:\d+>/check-in###promotion/check-in
+GET /activity/diwali/<promotion_id:\d+>/light###promotion/light-diwali
+GET /activity/diwali/<promotion_id:\d+>/popular###promotion/diwali-popular
